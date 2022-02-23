@@ -1,0 +1,19 @@
+.footer__main {
+  background: white;
+  bottom: 0 !important;
+  padding-top: 10px !important;
+  padding-bottom: 8px !important ;
+
+  .footer__logo {
+      text-align: center;
+      img {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 15px;
+        margin-left: 15px;
+        cursor: pointer;
+      }
+  }
+}

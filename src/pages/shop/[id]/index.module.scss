@@ -1,0 +1,32 @@
+
+.container {
+    width: 100%;
+    text-align: center;
+    .left__content {
+        left: 0;
+    }
+    .right__content {
+        margin: 0 auto;
+        margin: 40px 0px;
+        .btn__group {
+            margin: 40px 0px;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            tr {
+                border-bottom: 1px solid lightgray;
+            }
+            thead {
+                width: 20%;
+                td {
+                    font-weight: bold;
+                }
+            }
+            td {
+                padding: 20px 10px;
+                width: 20%;
+            }
+        }
+    }
+}
