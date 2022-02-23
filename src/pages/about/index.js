@@ -1,6 +1,5 @@
 import React from 'react';
 import Title from '../../components/ui/title/Title'
-import styles from './index.module.scss'
 import about from '../../../public/about.jpeg'
 
 const Index = () => {

@@ -1,61 +1,16 @@
 import React,{useState, useEffect} from 'react'
 import styles from './index.module.scss'
-import axios from 'axios'
 import Title from '../../components/ui/title/Title'
 import Input from '../../components/ui/input/Input'
 
 function index() {
     const [username, setUsername] = useState("")
     const [email, setEmail] = useState("")
-    const [userId, setUserId] = useState({})
-    
     const [password, setPassword] = useState("")
-    const [sucess, setSucess] = useState(false)
-    const [error, setError] = useState(false)
-
-
-    useEffect(() => {
-        const token = localStorage.getItem("token");  
-         
-        const fetchUser = async () => {
-            try {
-                const res = await axios.get(`${process.env.API_URL}/users/get-user`,{
-                    headers:{
-                        "authorization":token
-                    }
-                })
-                setUserId(res.data._id)
-                setUsername(res.data.username)
-                setEmail(res.data.email)                  
-            } catch (error) {
-                setError(true)
-            }
-        }
-        fetchUser()
-    }, [])
-    
 
     const handleSubmit = async() => {
         e.preventDefault();
-        const updatedUser = {
-          userId : userId,
-          username,
-          email,
-          password,
-        }
-        try {
-          const res = await axios.put("/users/"+userId,
-            {
-                headers:{
-                    "authorization":token,
-                }
-            },
-            updatedUser);
-          setSucess(true);
-        } catch (error) 
-        {
-            setError(true)
-        }
+       
     }
     
     return (
@@ -84,9 +39,6 @@ function index() {
     
                 
                 <input className="btn btn-black" type="submit" />
-                {sucess && (
-                    <Message type="success" message="Your Account has been updated successfuly"/>
-                )}
             </form>
         </div>
     );
