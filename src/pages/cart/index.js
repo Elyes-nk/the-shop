@@ -30,7 +30,7 @@ const Index = () => {
                     <tr>
                       <td>Produit</td>
                       <td>Quantités</td>
-                      <td>Price</td>
+                      <td>Prix</td>
                       <td></td>
                       <td></td>
                       <td></td>

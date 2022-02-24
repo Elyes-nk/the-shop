@@ -27,8 +27,8 @@ export default function Home() {
           <Input 
               type="text"
               name="Filter"
-              label="Filter"
-              placeholder="Titre, from, author, departement, category, role, price, date"
+              label="Recherche"
+              placeholder="Titre, from, auteur, département, category, rôle, price, date"
               onChange={(e) => handleFilter(e.target.value)}
           />
         </div>

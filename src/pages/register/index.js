@@ -24,7 +24,7 @@ function register() {
                             type="text"
                             label="Nom"
                             name="Username"
-                            placeholder="Enter your username..."
+                            placeholder="Entrer votre nom..."
                             onChange={e=>setUsername(e.target.value)}
                             required={true}
                         />
@@ -32,23 +32,23 @@ function register() {
                             type="email"
                             name="Email"
                             label="Email"
-                            placeholder="Enter your email..."
+                            placeholder="Entrer votre email..."
                             onChange={e=>setEmail(e.target.value)}
                             required={true}
                         />
                         <Input 
                             type="password"
                             name="Password"
-                            label="Password"
+                            label="Mot de passe"
                             onChange={e=>setPassword(e.target.value)}
-                            placeholder="Enter your password..."
+                            placeholder="Entrer votre mot de passe..."
                             required={true}
                         />
                     </div>
                     <input 
                         className="btn btn-black"
                         type="submit"
-                        value="Register"
+                        value="S'enregistrer"
                     />        
                 </form>
             </div>

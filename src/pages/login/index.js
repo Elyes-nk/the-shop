@@ -24,17 +24,17 @@ function login() {
                         <Input 
                             type="text"
                             name="Username"
-                            label="Username"
-                            placeholder="Enter your username..."
+                            label="Nom"
+                            placeholder="Entrer votre nom..."
                             onChange={e=>setUsername(e.target.value)}
                             required
                         />
                         <Input 
                             type="password"
                             name="Password"
-                            label="Password"
+                            label="Mot de passe"
                             onChange={e=>setPassword(e.target.value)}
-                            placeholder="Enter your password..."
+                            placeholder="Entrer votre mot de passe..."
                             required
                         />
                         
@@ -42,10 +42,10 @@ function login() {
                     <input 
                         className="btn btn-black"
                         type="submit"
-                        value="Connect"
+                        value="Se connecter"
                     />
                     <Link href='/register'>
-                        <a className={styles.button__register}>Register?</a>
+                        <a className={styles.button__register}>S'enregistrer?</a>
                     </Link>
                 </form>
             </div>          

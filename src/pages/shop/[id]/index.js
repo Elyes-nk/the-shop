@@ -21,25 +21,25 @@ function index() {
                 <table>
                   <thead>
                     <tr>
-                      <td>Height / Weight</td>
+                      <td>Hauteur / Largeur</td>
                       <td>{product?.height} / {product?.weight}</td>
                     </tr>
                     <tr>
-                      <td>Author</td>
+                      <td>Auteur</td>
                       <td>{product?.autor}</td>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Lived</td>
+                      <td>A vécu</td>
                       <td>{product?.life}</td>
                     </tr>
                     <tr>
-                      <td>Role</td>
+                      <td>Rôle</td>
                       <td>{product?.role}</td>
                     </tr>
                     <tr>
-                      <td>Price</td>
+                      <td>Prix</td>
                       <td>{product?.price} €</td>
                     </tr>
                   </tbody>

@@ -1,4 +1,4 @@
-import React, {useState, useContext, useEffect} from 'react'
+import React, {useState, useContext} from 'react'
 import Link from 'next/link'
 import styles from "./HeaderMenu.module.scss";
 import LogoCart from '../../../public/cart.jpeg'
@@ -24,17 +24,17 @@ const HeaderMenu = () => {
                     <ul>
                         <li>
                             <Link href="/">
-                                <a>Home</a>
+                                <a>Accueil</a>
                             </Link>
                         </li>
                         <li>
                             <Link href="/shop">
-                                <a>Shop</a>
+                                <a>Nos coups de coeur du moment</a>
                             </Link>
                         </li>
                         <li>
                             <Link href="/about">
-                                <a>About</a>
+                                <a>A propos</a>
                             </Link>
                         </li>
                     </ul>
@@ -51,7 +51,7 @@ const HeaderMenu = () => {
             ):(
                 <Link href="/login">
                     <a className="btn btn-white">
-                        Login
+                        S'identifier
                     </a>
                 </Link>
             )}

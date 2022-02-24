@@ -20,7 +20,7 @@ function index() {
                 <Input 
                     type="text" 
                     value={username} 
-                    label="Username"
+                    label="Nom"
                     name="name" 
                     onChange={e=>setUsername(e.target.value)}
                 />
@@ -33,7 +33,7 @@ function index() {
                 />
                 <Input 
                     type="password" 
-                    label="Password"
+                    label="Mot de passe"
                     onChange={e=>setPassword(e.target.value)}
                 />
     
